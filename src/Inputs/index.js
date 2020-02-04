@@ -1,25 +1,29 @@
 import React from "react";
+import { connect } from "react-redux";
+import { alter_val } from "./store/action.js";
 
 class Inputs extends React.Component {
     constructor(props)
     {
         super( props );
         this.state = { val: "FKC" };
-        this.watch_you = this.watch_you.bind(this);
     }
 
-    watch_you( event )
+    watch_you( val )
     {
-        this.setState({ val: event.target.value });
+        this.setState({ val });
+        // dispatches action
+        this.props.alter_val( val );
     }
     render()
     {
         return (
         <div>
-            <input className="fuck-you" onChange={ this.watch_you } value={ this.state.val } />
+            <input className="fuck-you" onChange={ event => this.watch_you( event.target.value ) } value={ this.state.val } />
         </div>
         );
     }
 }
 
-export default Inputs;
+//
+export default connect( null, { alter_val } )( Inputs );

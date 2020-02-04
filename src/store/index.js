@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from "redux";
-import todos from "./todos.js";
-import inputs from "../Inputs/store.js";
+import inputs from "../Inputs/store/store.js";
 
 export default createStore(
     // Reducers
-    combineReducers({ todos, inputs })
+    combineReducers({ inputs }),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );

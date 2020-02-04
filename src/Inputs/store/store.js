@@ -11,14 +11,14 @@ export default function ( state = initial_state, action )
         {
             return {
                 ...state,
-                val: state.val
+                val: action.payload.val
             };
         }
         case "OBJ":
         {
             return {
                 ...state,
-                obj: state.obj
+                obj: action.payload.obj
             };
         }
         // Reset
