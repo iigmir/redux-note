@@ -8,7 +8,7 @@ class RenderInput extends React.Component {
     {
         return (
         <div className="RenderInput">
-            <h1>Another state:</h1>
+            <h1>輸出 state:</h1>
             <ul>
                 <li>val: { this.props.val }</li>
                 <li>count: { this.props.count }</li>
