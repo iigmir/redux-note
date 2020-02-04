@@ -5,11 +5,12 @@ import "./App.css";
 class App extends React.Component {
     render()
     {
+        const code_file = <code>src/App.js</code>;
         return (
         <div className="App">
             <header className="App-header">
                 <img src={ logo } className="App-logo" alt="logo" />
-                <p> Edit <code>src/App.js</code> and save to reload. </p>
+                <p> Edit { code_file } and save to reload. </p>
                 <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Learn React
                 </a>
