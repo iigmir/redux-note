@@ -11,6 +11,10 @@ class Form extends React.Component {
     {
         this.props.alter_count( this.props.count + 1 );
     }
+    reset_count()
+    {
+        this.props.alter_count( 0 );
+    }
     render()
     {
         return (

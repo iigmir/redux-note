@@ -1,5 +1,3 @@
-// import { alter_val } from "./action.js";
-
 const state_to_local = state => ({
     inputs_val: state.inputs.val,
 });
