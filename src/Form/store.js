@@ -1,5 +1,5 @@
-import { alter_val } from "../Inputs/store/action.js";
-import { alter_count } from "../Count/store/action.js";
+import { alter_val } from "../store/inputs/action.js";
+import { alter_count } from "../store/count/action.js";
 
 const state_to_local = state => ({
     val: state.inputs.val,
