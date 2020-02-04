@@ -1,25 +1,19 @@
 const initial_state = {
-    val: "FKC",
+    val: "Hello",
     obj: {}
 };
 
-export default function ( state = initial_state, action )
+export default ( state = initial_state, action ) =>
 {
     switch ( action.type )
     {
         case "VAL":
         {
-            return {
-                ...state,
-                val: action.payload.val
-            };
+            return { ...state, val: action.payload.val };
         }
         case "OBJ":
         {
-            return {
-                ...state,
-                obj: action.payload.obj
-            };
+            return { ...state, obj: action.payload.obj };
         }
         // Reset
         default: return state;

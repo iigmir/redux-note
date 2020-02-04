@@ -1,10 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "./index.css";
-
-const link_state_to_local = state => ({
-    val: state.inputs.val
-});
+import { state_to_local } from "../Inputs/store/binding.js";
 
 class RenderInput extends React.Component {
     render()
@@ -19,5 +16,5 @@ class RenderInput extends React.Component {
     }
 }
 
-export default connect( link_state_to_local )( RenderInput );
+export default connect( state_to_local )( RenderInput );
 
