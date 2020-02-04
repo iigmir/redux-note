@@ -1,20 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import LogoHeader from "../LogoHeader/index.js";
 
 class App extends React.Component {
     render()
     {
-        const code_file = <code>src/App.js</code>;
         return (
         <div className="App">
-            <header className="App-header">
-                <img src={ logo } className="App-logo" alt="logo" />
-                <p> Edit { code_file } and save to reload. </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
+            <LogoHeader />
+            {/* <Inputs /> */}
         </div>
         );
     }
