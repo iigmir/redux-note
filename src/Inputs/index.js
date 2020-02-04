@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { alter_val } from "./store/action.js";
 
 class Inputs extends React.Component {
-    constructor(props)
+    constructor( props )
     {
         super( props );
         this.state = { val: "FKC" };
@@ -11,9 +11,9 @@ class Inputs extends React.Component {
 
     watch_you( val )
     {
-        this.setState({ val });
         // dispatches action
         this.props.alter_val( val );
+        this.setState({ val });
     }
     render()
     {
