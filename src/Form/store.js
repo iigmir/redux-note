@@ -3,7 +3,7 @@ import { alter_count } from "../Count/store/action.js";
 
 const state_to_local = state => ({
     val: state.inputs.val,
-    count: state.count.val,
+    count: state.count.count,
 });
 
 const action_to_local = {
