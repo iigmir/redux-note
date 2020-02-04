@@ -2,16 +2,16 @@ import React from "react";
 import { connect } from "react-redux";
 import { state_to_local, action_to_local } from "./store/binding.js";
 
-class Inputs extends React.Component {
+class Count extends React.Component {
     render()
     {
         return (
-        <div>
+        <div className="RenderInput">
             <h2>Current input</h2>
-            {/* <p>{  }</p> */}
+            <p>{ this.props.inputs_val }</p>
         </div>
         );
     }
 }
 
-export default connect( state_to_local, action_to_local )( Inputs );
+export default connect( state_to_local, action_to_local )( Count );
