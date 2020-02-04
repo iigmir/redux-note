@@ -12,7 +12,7 @@ class Inputs extends React.Component {
         return (
         <div>
             <input
-                className="fuck-you"
+                className="i-miss-you"
                 value={ this.props.val }
                 onChange={ event => this.watch_you( event.target.value ) }
             />

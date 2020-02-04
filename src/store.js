@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from "redux";
-import inputs from "../Inputs/store/store.js";
+import inputs from "./Inputs/store/reducer.js";
 
 export default createStore(
     // Reducers
