@@ -1,0 +1,9 @@
+.Intro {
+    display: flex;
+    color: bisque;
+    margin-bottom: 1rem;
+}
+
+.Intro .item {
+    margin-right: 1rem;
+}
