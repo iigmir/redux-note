@@ -16,12 +16,12 @@ class Form extends React.Component {
         return (
         <form method="get" className="RenderInput">
             <div>
-                <label for="val">Remaintaing value: </label>
+                <label htmlFor="val">Remaintaing value: </label>
                 <input type="text" name="val" id="val" value={ this.props.val } onChange={ event => this.emit_val( event.target.value ) } />
             </div>
             <div>
-                <label for="count">Trigger this: </label>
-                <button id="count" type="button">Add to favorites</button>
+                <label htmlFor="count">Trigger this: </label>
+                <button id="count" type="button" onClick={ event => this.emit_count() }>Add to favorites</button>
             </div>
         </form>
         );
