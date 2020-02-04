@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Form from "../Form/index.js";
 import Count from "../Count/index.js";
 import Intro from "../Intro/index.js";
 import Inputs from "../Inputs/index.js";
@@ -14,6 +15,7 @@ class App extends React.Component {
             <Inputs />
             <RenderInput />
             <Count />
+            <Form />
         </div>
         );
     }

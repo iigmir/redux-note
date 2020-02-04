@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { state_to_local, action_to_local } from "./store.js";
 
 class Form extends React.Component {
     render()
@@ -19,4 +20,4 @@ class Form extends React.Component {
     }
 }
 
-export default connect( null, null )( Form );
+export default connect( state_to_local, action_to_local )( Form );
