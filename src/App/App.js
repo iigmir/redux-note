@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import LogoHeader from "../LogoHeader/index.js";
+import Inputs from "../Inputs/index.js";
 
 class App extends React.Component {
     render()
@@ -8,7 +9,7 @@ class App extends React.Component {
         return (
         <div className="App">
             <LogoHeader />
-            {/* <Inputs /> */}
+            <Inputs />
         </div>
         );
     }
