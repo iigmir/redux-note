@@ -7,9 +7,9 @@ class Form extends React.Component {
     {
         this.props.alter_val( val );
     }
-    emit_count()
+    emit_count( val )
     {
-        this.props.alter_count( this.props.count + 1 );
+        this.props.alter_count( val );
     }
     reset_count()
     {
@@ -25,7 +25,7 @@ class Form extends React.Component {
             </div>
             <div>
                 <label htmlFor="count">觸動 count </label>
-                <button id="count" type="button" onClick={ event => this.emit_count() }>Add to favorites</button>
+                <button id="count" type="button" onClick={ event => this.emit_count( this.props.count + 1 ) }>Add to favorites</button>
             </div>
         </form>
         );
